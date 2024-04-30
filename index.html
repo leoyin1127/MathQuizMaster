@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Math Quiz</h1>
+        <select id="quizType">
+            <option value="multiply">Multiplication</option>
+            <option value="divide">Division</option>
+        </select>
+        <input type="number" id="totalQuestions" placeholder="Number of questions" min="1" max="20">
+        <button onclick="startQuiz()">Start Quiz</button>
+        <div id="question"></div>
+        <input type="number" id="answer" placeholder="Enter your answer" style="display:none;">
+        <button onclick="submitAnswer()" style="display:none;">Submit Answer</button>
+        <div id="feedback"></div>
+        <div id="score"></div>
+        <div id="summary"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

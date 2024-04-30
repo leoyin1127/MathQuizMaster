@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    flex-direction: column;
+}
+
+button,
+input {
+    margin: 5px;
+    padding: 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="number"] {
+    color: black;
+    background-color: white;
+    width: 250px;
+    /* Increase width */
+}
+
+#question,
+#feedback,
+#score {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 300px;
+}
