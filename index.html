@@ -4,25 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Math Quiz</title>
+    <!-- Link to the external CSS file for styling -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
         <h1>Math Quiz</h1>
+        <!-- Dropdown to select quiz type (Multiplication or Division) -->
         <select id="quizType">
             <option value="multiply">Multiplication</option>
             <option value="divide">Division</option>
         </select>
+        <!-- Input field to enter the total number of questions -->
         <input type="number" id="totalQuestions" placeholder="Number of questions" min="1" max="20">
+        <!-- Button to start the quiz, calls startQuiz() function when clicked -->
         <button onclick="startQuiz()">Start Quiz</button>
+        <!-- Div to display the current question -->
         <div id="question"></div>
+        <!-- Input field to enter the answer, initially hidden -->
         <input type="number" id="answer" placeholder="Enter your answer" style="display:none;">
+        <!-- Button to submit the answer, initially hidden, calls submitAnswer() function when clicked -->
         <button onclick="submitAnswer()" style="display:none;">Submit Answer</button>
+        <!-- Div to display feedback for the answer -->
         <div id="feedback"></div>
+        <!-- Div to display the score -->
         <div id="score"></div>
+        <!-- Div to display a summary of the quiz -->
         <div id="summary"></div>
     </div>
+    <!-- Link to the external JavaScript file for functionality -->
     <script src="app.js"></script>
 </body>
 
